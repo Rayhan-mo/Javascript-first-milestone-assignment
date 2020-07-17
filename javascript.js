@@ -4,7 +4,7 @@ function feetToMile(feet){
     mile = mile.toFixed(2); // fixed in 2 decimal
     return mile;
 }
-var result = feetToMile(99999); // put feet number here.
+var result = feetToMile(); // put feet number here.
 console.log(result);
 
 //wood calculator assignment 2
@@ -15,7 +15,7 @@ function woodCalculator(chair, table, bed){
     var totalWoodNeed = forChair + forTable + forBed;
     return totalWoodNeed;
 }
-var total = woodCalculator(3, 5, 8); // put value
+var total = woodCalculator(); // put value
 console.log(total);
 
 // brick calculator assignment3
@@ -38,7 +38,7 @@ function brickCalculator(floor){
     return perTotalFloorBrick;
 }
 
-var totalBrickNeed = brickCalculator(55); // put value here
+var totalBrickNeed = brickCalculator(); // put value here
 console.log(totalBrickNeed);
 
 //  tiny friend assignment 4
@@ -52,5 +52,5 @@ function tinyFriend(name){
     }
     return smallName;
 }
-var mySmallFriendName = tinyFriend(['rahim', 'kali']); //put name here
+var mySmallFriendName = tinyFriend(); //put name here
 console.log(mySmallFriendName);
