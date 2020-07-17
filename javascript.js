@@ -21,21 +21,17 @@ console.log(total);
 // brick calculator assignment3
 function brickCalculator(floor){
     if(floor <= 10){
-        var totalFeetBrick = 1000;
-        var totatFeet = 15;
-        perTotalFloorBrick = totalFeetBrick * totatFeet;  
+        var totalBrick = (floor * 15 * 1000);
+        return totalBrick;
     }
     else if(floor >=11 && floor <=20 ){
-        var totalFeetBrick = 1000;
-        var totalFeet = 12;
-        perTotalFloorBrick = totalFeetBrick * totalFeet;
+        var totalBrick = (10 * 15 * 1000) + (floor - 10) * 12 * 1000;
+        return totalBrick;
     }
     else{
-        var totalFeetBrick = 1000;
-        var totalFeet = 10;
-        perTotalFloorBrick = totalFeetBrick * totalFeet;
+        var totalBrick = (10 * 15 * 1000) + (10 * 12 * 1000) + (floor - 20) * 10 * 1000;
+        return totalBrick;
     }
-    return perTotalFloorBrick;
 }
 
 var totalBrickNeed = brickCalculator(); // put value here
@@ -54,3 +50,6 @@ function tinyFriend(name){
 }
 var mySmallFriendName = tinyFriend(); //put name here
 console.log(mySmallFriendName);
+
+
+
