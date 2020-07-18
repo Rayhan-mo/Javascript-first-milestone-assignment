@@ -25,11 +25,11 @@ function brickCalculator(floor){
         return totalBrick;
     }
     else if(floor >=11 && floor <=20 ){
-        var totalBrick = (floor * 15 * 1000) + 12 * 1000;
+        var totalBrick = (10 * 15 * 1000) + (floor-10)* 12 * 1000;
         return totalBrick;
     }
     else{
-        var totalBrick = (floor * 15 * 1000) + (floor * 12 * 1000) + 10 * 1000;
+        var totalBrick = (10 * 15 * 1000) + (10 * 12 * 1000) + (floor-20) * 10 * 1000;
         return totalBrick;
     }
 }
